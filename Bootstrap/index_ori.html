@@ -4,73 +4,80 @@
 <head>
   <meta charset="utf-8">
   <title>Dokdo</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Dokdo|Montserrat:100,400,900|Ubuntu:300,400" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles_ori.css">
-  <!-- bootstrap link-->
+  <!-- 부트스트랩 cdn -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!-- 폰트어썸 -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <!-- googlefont -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=Dokdo|Montserrat:100,400,900" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css?family=Dokdo|Montserrat:100,400,700,900|Ubuntu" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles_ori.css">
 </head>
 
 <body>
 
   <section id="title">
-  <div class="container-fluid">
-    <!-- Nav Bar -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="">Dokdo</a>
-    <!-- 내브바-브랜드의 이것은 홈페이지 -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- 토글러버튼을 눌렀을때 이 아래의 것들이 실행됨 -->
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav ml-auto">
-        <!-- ml-auto라는 것 덕분에 자동으로 넓이가 조정된다. -->
-        <li class="navbar-item">
-          <a class="nav-link" href="#footer">Contact</a>
-        </li>
-        <li class="navbar-item">
-          <a class="nav-link" href="#pricing">Pricing</a>
-        </li>
-        <li class="navbar-item">
-          <a class="nav-link" href="#cta">Download</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Hyojin</a>
+        <!--이브랜드를 여기로 올리면 햄버거가 적용됬을때 브랜드가 왼쪽으로, 링크가 오른쪽으로 오게한다.-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
 
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-    <!-- Title -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href=“”>Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=“”>Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=“”>Download</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Location
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">address</a>
+                <a class="dropdown-item" href="#">email</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">phone</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    <div class="row">
-      <!-- 전체 타이틀 섹션의상단에는 메뉴가 있고 그 밑에는 왼쪽과 오른쪽으로 나눠져있음 -->
-      <div class="col-lg-6">
-        <h1>푸르다고 <br />그저 바라만 보고 있을 수 없다.</h1>
-        <h1>높고 맑게 탈각한 흔적이 <br>저기 있다.</h1>
-        <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
-        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>푸르다고 <br />그저 바라만 보고 있을 수 없다.</h1>
+          <h1>높고 맑게 탈각한 흔적이 <br>저기 있다.</h1>
+          <button class="btn btn-dark btn-lg download-button" type="button"><i class="fab fa-apple"></i>Download</button>
+          <button class="btn btn-lg btn-outline-light download-button" type="button"><i class="fab fa-google-play"></i>Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="images/dokdo02.jpg" alt="dokdo">
+        </div>
       </div>
-      <div class="col-lg-6">
-        <img class="title-image" src="images/dokdo02.jpg" alt="dokdo-blue">
-      </div>
-    </div>
 
+    </div>
   </section>
 
-</div><!--container fluid-->
+
   <!-- Features -->
 
-  <section id="features"><!--id는 #으로 지정--->
-
+  <section id="features">
     <div class="row">
       <div class="feature-box col-lg-4">
         <i class="icon fas fa-check-circle fa-4x"></i>
@@ -90,18 +97,15 @@
         <p>바다보다 낮고<br />하늘보다 높다.<br />버팀이란 숭숭한 자유로움</p>
       </div>
     </div>
-
-
   </section>
 
 
   <!-- Testimonials -->
 
   <section id="testimonials">
-
-    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
       <div class="carousel-inner">
-        <div class="carousel-item active"><!--이게 가장 먼저보임.---->
+        <div class="carousel-item active">
           <h2>난 갈망하지 않는다. 바다의 끝도 하늘의 시작도<br />내가 찾은 곳은 이미 탈각의 끝이며, <br />기억이 시작이다.</h2>
           <img class="testimonial-image" src="images/dokdo02.jpg" alt="dokdo-profile">
           <em>울릉군, 경상북도</em>
@@ -113,12 +117,15 @@
         </div>
       </div>
       <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span><!--마우스 커서를 가져다 대면 희미하게 보였다가해주는거: area-hidden으로 설정---->
-      </a><!--prev, next --->
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
       <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </a>
     </div>
+
+
+
 
 
   </section>
@@ -131,13 +138,12 @@
     <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
     <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
     <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
-
+    class="press-logo"
   </section>
 
 
   <!-- Pricing -->
 
-  <!-- Pricing -->
 
   <section id="pricing">
 
@@ -193,6 +199,7 @@
 
     </div>
 
+
   </section>
 
 
@@ -200,9 +207,9 @@
 
   <section id="cta">
 
-    <h3 class="cta-heading">독도 경관과 경로 자료를 준비했습니다.</h3>
-    <button class="btn btn-lg btn-dark download-button" type="button"><i class="fab fa-apple"></i> Download</button>
-    <button class="btn btn-outline-light btn-lg download-button" type="button"><i class="fab fa-google-play"></i> Download</button>
+    <h3>독도 경관과 경로 자료를 준비했습니다.</h3>
+    <button type="button">Download</button>
+    <button type="button">Download</button>
 
   </section>
 
@@ -210,11 +217,8 @@
   <!-- Footer -->
 
   <footer id="footer">
-  <i class="social-icon fab fa-facebook-square"></i>
-  <i class="social-icon fab fa-twitter"></i>
-  <i class="social-icon fab fa-instagram"></i>
-  <i class="social-icon fas fa-envelope-open-text"></i>
-    <p>© Copyright 2018 Hyunjong</p>
+
+    <p>© Copyright 2019 Hyunjong</p>
 
   </footer>
 

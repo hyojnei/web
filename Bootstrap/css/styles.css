@@ -54,7 +54,7 @@ p {
 /* Download button */
 
 .download-button {
-  margin: 5% 3% 5% 0;
+  margin: 5% 3% 5% 0;/*위 오른쪽 아래 왼쪽 */
 }
 
 /* title images */
